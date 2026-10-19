@@ -341,7 +341,6 @@ details p{margin:0 0 1.3rem;color:var(--muted);max-width:42rem}
 .hours td:last-child{text-align:right;font-weight:600}
 footer{position:relative;z-index:2;padding:2.5rem 1.25rem 3rem;text-align:center;color:var(--muted);font-size:.95rem}
 footer i{display:inline-block;width:.55rem;height:.55rem;border-radius:50%;background:var(--red);box-shadow:0 0 10px var(--neon);margin-right:.5rem}
-.callbar{display:none}
 
 @media (max-width:52rem){
   header.top .in{gap:.8rem;padding-left:1rem}
@@ -361,8 +360,6 @@ footer i{display:inline-block;width:.55rem;height:.55rem;border-radius:50%;backg
   .ba-stage{aspect-ratio:1.5/1}
   section{padding:4rem 0}
   .quote{min-height:15rem}
-  .callbar{display:grid;grid-template-columns:1fr 1fr;gap:.6rem;position:fixed;z-index:60;left:.75rem;right:.75rem;bottom:calc(env(safe-area-inset-bottom,0px) + .6rem);padding:.5rem;border:1px solid var(--line);border-radius:999px;background:rgba(10,12,15,.8);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px)}
-  .callbar .btn{justify-content:center;padding:.8rem 1rem}
   footer{padding-bottom:6rem}
   #cur{display:none}
 }
@@ -435,7 +432,7 @@ html,body{overflow-x:clip;max-width:100%}
 .cb-f{display:flex;gap:.5rem;padding:.7rem;border-top:1px solid var(--line)}
 .cb-f input{flex:1;min-width:0;padding:.7rem .9rem;border-radius:999px;border:1px solid var(--line);background:#12151b;color:#fff;font:1rem var(--body)}
 .cb-f button{padding:.7rem 1.1rem;border:0;border-radius:999px;background:var(--red);color:#fff;font:600 1rem var(--body);cursor:pointer}
-@media(max-width:700px){.cb-fab{bottom:5.6rem}.cb{right:.5rem;left:.5rem;bottom:.5rem;width:auto;height:min(36rem,calc(100svh - 1rem))}}
+@media(max-width:700px){.cb-fab{bottom:calc(env(safe-area-inset-bottom,0px) + 1rem)}.cb{right:.5rem;left:.5rem;bottom:.5rem;width:auto;height:min(36rem,calc(100svh - 1rem))}}
 /* v3 additions */
 .mapbtn{cursor:pointer;border:0;font:600 1rem var(--body)}
 .pinbox .mapframe{width:100%;flex:1;min-height:14rem;border:0;filter:invert(.92) hue-rotate(180deg) contrast(.92) saturate(.8);border-radius:.8rem}
@@ -813,7 +810,6 @@ html{scroll-padding-top:5.5rem}
 
 <div class="checker" aria-hidden="true"></div>
 <footer><div class="bigword" aria-hidden="true">BRÖDERNAS</div><div class="fstat" id="fstat" aria-live="polite"></div><i aria-hidden="true"></i>© Brödernas Kiosk &amp; Bil AB · Belleforsvägen 2, Tidan · <a target="_blank" rel="noopener" href="tel:+46763173640">076-317 36 40</a> · <a target="_blank" rel="noopener" href="mailto:brodernaskioskbil@hotmail.com">brodernaskioskbil@hotmail.com</a></footer>
-<div class="callbar"><a target="_blank" rel="noopener" class="btn" href="tel:+46763173640">Ring oss</a><a class="btn ghost" href="#hitta">Hitta hit</a></div>
 
 <script>
 (function(){
